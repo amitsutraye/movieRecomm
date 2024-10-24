@@ -16,5 +16,5 @@ jobs:
           lfs: true
       - name: Push to hub
         env:
-          HF_TOKEN: ${{ secrets.MOVIE_TOKEN }}
+          HF_TOKEN: ${{ secrets.MOVIE_SECRET }}
         run: git push --force https://amitsutraye:${{ env.HF_TOKEN }}@huggingface.co/spaces/amitsutraye/movierecomm main
